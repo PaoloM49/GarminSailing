@@ -100,7 +100,7 @@ class SailingView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var clockTime = System.getClockTime();
         var time = clockTime.hour.format("%02d") + ":" + clockTime.min.format("%02d");
-        dc.drawText(width * 0.50 ,(height * 0.05), Graphics.FONT_MEDIUM, time, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width * 0.50 ,(height * 0.05), Graphics.FONT_LARGE, time, Graphics.TEXT_JUSTIFY_CENTER);
 
         try {
             if ($.session != null && $.session.isRecording()) {
